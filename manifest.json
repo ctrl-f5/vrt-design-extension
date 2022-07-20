@@ -1,0 +1,22 @@
+{
+  "name": "VRT NWS Design Customizer",
+  "description": "Adjust the design of the VRT NWS website to provide more information density",
+  "version": "2.0",
+  "manifest_version": 3,
+  "icons": {
+    "192": "icon-192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.vrt.be/vrtnws/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ]
+}
