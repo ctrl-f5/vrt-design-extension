@@ -12,13 +12,31 @@
 .vrt-page #main-content {
     padding: 0 1%;
 }
+.vrtnws-sb-container {
+    padding: 0 !important;
+}
 #main-content .vrtnws-sb-container section:first-of-type {
     display: flex;
     flex-flow: row wrap;
     gap: 1%;
 }
 #main-content .vrtnws-sb-container > div > section > ul {
-    max-width: 32%;
+    max-width: 49%;
+}
+@media (min-width: 1194px) {
+    #main-content .vrtnws-sb-container > div > section > ul {
+        max-width: 32%;
+    }
+}
+@media (min-width: 2000px) {
+    #main-content .vrtnws-sb-container > div > section > ul {
+        max-width: 24%;
+    }
+}
+ul.big-block-clone {
+    border: 5px solid lightgray;
+    border-radius: 20px;
+    background-color: ghostwhite;
 }
 ul > li > a {
     flex-direction: column !important;
@@ -27,8 +45,18 @@ ul > li > div {
     padding: 5px 0 !important;
 }
 ul > li > a > div {
-    width: 100% !important;
+    width: auto !important;
 }
-ul > li li:nth-child(1):nth-last-child(4):first-of-type {
+ul > li li:nth-child(1):nth-last-child(4)
+{
     grid-column: 1 / span 1 !important;
+}
+ul > li li:nth-child(1):nth-last-child(1),
+ul > li li:nth-child(2):nth-last-child(1),
+ul > li li:nth-child(1):nth-last-child(2) {
+    grid-column: 1 / span 2 !important;
+}
+ul > li li:nth-child(1):nth-last-child(2) > a > div:first-child > div,
+ul > li li:nth-child(2):nth-last-child(1) > a > div:first-child > div{
+    width: 104px !important;
 }

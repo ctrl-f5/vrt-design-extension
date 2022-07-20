@@ -1,7 +1,7 @@
 {
   "name": "VRT NWS Design Customizer",
   "description": "Adjust the design of the VRT NWS website to provide more information density",
-  "version": "3.0",
+  "version": "4.0",
   "manifest_version": 3,
   "icons": {
     "192": "icons/icon-192.png"
