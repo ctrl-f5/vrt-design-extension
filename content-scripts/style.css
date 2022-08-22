@@ -38,6 +38,13 @@ ul.big-block-clone {
     border-radius: 20px;
     background-color: ghostwhite;
 }
+ul::before {
+    inset: 0 !important;
+    border-radius: 12px;
+}
+ul::after {
+    inset: -12px 0 !important;
+}
 ul > li > a {
     flex-direction: column !important;
 }
